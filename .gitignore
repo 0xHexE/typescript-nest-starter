@@ -64,5 +64,5 @@ typings/
 dist
 
 # Config files
-config
+/config/*
 !config/_default.json

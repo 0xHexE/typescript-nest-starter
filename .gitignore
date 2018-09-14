@@ -62,3 +62,7 @@ typings/
 
 # Output for typescript
 dist
+
+# Config files
+config
+!config/_default.json

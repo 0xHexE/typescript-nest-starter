@@ -2,7 +2,10 @@ language: node_js
 node_js:
   - "10.10.0"
 script:
+  - npm install codecov -g
   - npm run lint
   - npm run test
   - npm run test:e2e
   - npm run test:cov
+after_success:
+  - codecov --token=6957db8e-b976-4d4c-ae98-2ff8a688e03c

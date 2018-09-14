@@ -7,13 +7,13 @@ const config = convict({
         doc: 'The current node.js environment',
         default: 'prod',
         format: [ 'dev', 'test', 'stage', 'prod' ],
-        env: 'NODE_ENV'
+        env: 'NODE_ENV',
     },
     port: {
         doc: 'Port for running the application',
         format: Number,
         default: null,
-        env: 'NODE_PORT'
+        env: 'NODE_PORT',
     },
 });
 
